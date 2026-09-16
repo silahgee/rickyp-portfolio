@@ -7,6 +7,16 @@ import { site } from "../config/site";
 const meta = {
     title: `Projects ~ ${site.name}`,
     description: `Explore ${site.name}'s projects, experiments, and open-source work across web development, software, and technology.`,
+    breadcrumbs: [
+        {
+            name: "Home",
+            url: new URL("/", Astro.site).href,
+        },
+        {
+            name: "Projects",
+            url: new URL("/projects", Astro.site).href,
+        },
+    ]
 }
 
 interface Project {
@@ -45,6 +55,7 @@ interface Project {
 <Layout
     title={meta.title}
     description={meta.description}
+    breadcrumbs={meta.breadcrumbs}
 >
     <div class="projects-page">
         <div class="projects-shell">
