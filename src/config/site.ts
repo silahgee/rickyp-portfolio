@@ -10,7 +10,7 @@ export const site = {
         whatsapp: undefined
     },
     socials: {
-        github: undefined,
+        github: "https://github.com/silahgee",
         linkedin: undefined,
         twitter: undefined,
         youtube: undefined
